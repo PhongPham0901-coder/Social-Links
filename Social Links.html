@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Links</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .social-block {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 20px;
+      width: 150px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      border: 3px solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(45deg, #ff6a00, #ee0979);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-block img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .social-block:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="social-block" href="https://www.facebook.com/gio.not.sai" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" />
+      <div>Gio Nót Sai</div>
+    </a>
+    <a class="social-block" href="https://www.instagram.com/im_giodahustlerr208/" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+      <div>Gio Nót Sai</div>
+    </a>
+    <a class="social-block" href="https://soundcloud.com/gio-not-sai" target="_blank">
+      <div border-radius: 35px><img src="data:image/png;base64,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" alt="SoundCloud" /></div>
+      <div>Gio Nót Sai</div>
+    </a>
+  </div>
+</body>
+</html>
